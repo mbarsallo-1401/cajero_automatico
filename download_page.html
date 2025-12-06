@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivos Actualizados - Cajero Automático UTP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .alert {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .alert h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .alert ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .file-section {
+            background: #f8f9fa;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .file-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .file-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .changes-list {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .changes-list h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .changes-list ul {
+            margin-left: 20px;
+            line-height: 2;
+            color: #555;
+        }
+
+        .copy-section {
+            margin-top: 20px;
+        }
+
+        .copy-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .success-msg {
+            display: none;
+            color: #28a745;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .code-info {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Archivos Actualizados - Cajero Automático UTP</h1>
+        <p class="subtitle">✅ Todos los cambios solicitados implementados correctamente</p>
+
+        <div class="alert">
+            <h3>📋 Antes de comenzar:</h3>
+            <ul>
+                <li><strong>1.</strong> Crea una carpeta llamada <code>img</code> en la raíz de tu proyecto</li>
+                <li><strong>2.</strong> Coloca el logo de la UTP como <code>utp-logo.png</code> dentro de img/</li>
+                <li><strong>3.</strong> Haz clic en los botones para copiar el código de cada archivo</li>
+                <li><strong>4.</strong> Pega el código en los archivos correspondientes de tu proyecto</li>
+            </ul>
+        </div>
+
+        <!-- ARCHIVO 1: REGISTRO.PHP -->
+        <div class="file-section">
+            <div class="file-header">
+                <span class="file-title">1️⃣ registro.php</span>
+                <span style="font-size: 24px;">🔐</span>
+            </div>
+            
+            <div class="changes-list">
+                <h4>✨ Nuevas funcionalidades:</h4>
+                <ul>
+                    <li>✅ Medidor visual de fortaleza de contraseña (débil/media/fuerte)</li>
+                    <li>✅ Validación de requisitos en tiempo real con indicadores ✓/✗</li>
+                    <li>✅ Requisitos implementados:
+                        <ul>
+                            <li>Mínimo 8 caracteres</li>
+                            <li>Al menos una mayúscula (A-Z)</li>
+                            <li>Al menos una minúscula (a-z)</li>
+                            <li>Al menos un número (0-9)</li>
+                            <li>Al menos un carácter especial (@#$%^&*)</li>
+                        </ul>
+                    </li>
+                    <li>✅ Validación cliente y servidor</li>
+                </ul>
+            </div>
+
+            <div class="copy-section">
+                <button class="copy-btn" onclick="copyToClipboard('registro')">
+                    📄 Copiar código de registro.php
+                </button>
+                <div class="success-msg" id="success-registro">✓ ¡Código copiado al portapapeles!</div>
+            </div>
+        </div>
+
+        <!-- ARCHIVO 2: INDEX.PHP -->
+        <div class="file-section">
+            <div class="file-header">
+                <span class="file-title">2️⃣ index.php</span>
+                <span style="font-size: 24px;">🏠</span>
+            </div>
+            
+            <div class="changes-list">
+                <h4>✨ Nuevas funcionalidades:</h4>
+                <ul>
+                    <li>✅ Logos de UTP en las 4 esquinas de la página</li>
+                    <li>✅ Efecto hover con zoom en los logos</li>
+                    <li>✅ Diseño responsive para dispositivos móviles</li>
+                    <li>✅ Posicionamiento fijo que se mantiene al hacer scroll</li>
+                </ul>
+            </div>
+
+            <div class="copy-section">
+                <button class="copy-btn" onclick="copyToClipboard('index')">
+                    📄 Copiar código de index.php
+                </button>
+                <div class="success-msg" id="success-index">✓ ¡Código copiado al portapapeles!</div>
+            </div>
+        </div>
+
+        <!-- ARCHIVO 3: LOGIN.PHP -->
+        <div class="file-section">
+            <div class="file-header">
+                <span class="file-title">3️⃣ login.php</span>
+                <span style="font-size: 24px;">🔑</span>
+            </div>
+            
+            <div class="changes-list">
+                <h4>✨ Nuevas funcionalidades:</h4>
+                <ul>
+                    <li>✅ Logos de UTP en las 4 esquinas (igual que index.php)</li>
+                    <li>✅ CAPTCHA con suma aritmética simple (números aleatorios 1-10)</li>
+                    <li>✅ Regeneración automática del CAPTCHA en cada intento</li>
+                    <li>✅ Validación del CAPTCHA antes de verificar credenciales</li>
+                    <li>✅ Diseño visual atractivo para el área del CAPTCHA</li>
+                </ul>
+            </div>
+
+            <div class="copy-section">
+                <button class="copy-btn" onclick="copyToClipboard('login')">
+                    📄 Copiar código de login.php
+                </button>
+                <div class="success-msg" id="success-login">✓ ¡Código copiado al portapapeles!</div>
+            </div>
+        </div>
+
+        <!-- ARCHIVO 4: RECORRIDOS.PHP -->
+        <div class="file-section">
+            <div class="file-header">
+                <span class="file-title">4️⃣ recorridos.php</span>
+                <span style="font-size: 24px;">🌳</span>
+            </div>
+            
+            <div class="changes-list">
+                <h4>✨ Nuevas funcionalidades:</h4>
+                <ul>
+                    <li>✅ Visualización gráfica del árbol (tree diagram CSS)</li>
+                    <li>✅ Efectos hover interactivos en nodos del árbol</li>
+                    <li>✅ Explicaciones detalladas de cada tipo de recorrido:</li>
+                    <li style="margin-left: 30px;">
+                        <strong>Preorden:</strong> Definición, uso práctico y orden de visita
+                    </li>
+                    <li style="margin-left: 30px;">
+                        <strong>Inorden:</strong> Definición, uso práctico y orden de visita
+                    </li>
+                    <li style="margin-left: 30px;">
+                        <strong>Postorden:</strong> Definición, uso práctico y orden de visita
+                    </li>
+                    <li>✅ Diseño educativo con cajas explicativas</li>
+                    <li>✅ Totalmente responsive</li>
+                </ul>
+            </div>
+
+            <div class="copy-section">
+                <button class="copy-btn" onclick="copyToClipboard('recorridos')">
+                    📄 Copiar código de recorridos.php
+                </button>
+                <div class="success-msg" id="success-recorridos">✓ ¡Código copiado al portapapeles!</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p style="font-size: 18px; margin-bottom: 10px;">✅ <strong>Implementación completada</strong></p>
+            <p>🎓 Proyecto: Cajero Automático - Universidad Tecnológica de Panamá</p>
+            <p style="margin-top: 20px; color: #999;">
+                Los archivos están listos para ser copiados y reemplazados en tu proyecto
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(fileName) {
+            const codes = {
+                registro: document.getElementById('code-registro').textContent,
+                index: document.getElementById('code-index').textContent,
+                login: document.getElementById('code-login').textContent,
+                recorridos: document.getElementById('code-recorridos').textContent
+            };
+
+            const textarea = document.createElement('textarea');
+            textarea.value = codes[fileName];
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                document.execCommand('copy');
+                const successMsg = document.getElementById('success-' + fileName);
+                successMsg.style.display = 'block';
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 3000);
+            } catch (err) {
+                alert('Error al copiar. Por favor, copia manualmente el código.');
+            }
+            
+            document.body.removeChild(textarea);
+        }
+    </script>
+
+    <!-- Códigos ocultos para copiar -->
