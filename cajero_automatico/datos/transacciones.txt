@@ -1,0 +1,2 @@
+692f77c9dfc20|2025-12-02 18:35:37|Mario Barsallo|Depósito|1.00|1000|1001
+692f77c9e7a79|2025-12-02 18:35:37|Mario Barsallo|Depósito|1.00|1001|1002
